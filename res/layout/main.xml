@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="10px">
+
+    <TextView android:id="@+id/label" 
+              android:layout_width="fill_parent" 
+              android:layout_height="wrap_content" 
+              android:text="Type course here:" />
+
+    <EditText android:id="@+id/entry" 
+              android:layout_width="fill_parent" 
+              android:layout_height="wrap_content" 
+              android:background="@android:drawable/editbox_background"
+              android:inputType="text"
+              android:layout_below="@id/label"/>
+    <Button android:id="@+id/ok" 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:layout_below="@id/entry"
+            
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="80px"
+            android:text="Search" android:onClick="searchCourse"/>
+       
+    <TextView android:id="@+id/debug" 
+    		android:layout_height="wrap_content" 
+    		android:layout_width="fill_parent" 
+    		android:layout_below="@+id/ok"
+    		 android:layout_centerHorizontal="true"
+    		 android:textStyle="bold"
+    		 android:textSize="12px"
+    		 android:paddingTop="10px"
+    		 android:paddingLeft="5px"
+    		android:text="Welcome to Time Edit on the Go!\n\n1. Search for your course by code or name\n\n2. Use checkboxes to choose your course(s)\n\n3. Use text boxes to rename and/or add reminders.\n\n4. Add to calendar"/>
+    		
+     <ListView android:id="@+id/list" 
+     android:layout_width="fill_parent" 
+              android:layout_height="0px"
+      android:layout_below="@+id/debug"
+      android:paddingTop="10px"
+      android:textSize="8px" android:focusableInTouchMode="true" android:soundEffectsEnabled="true"/>
+    
+<Button android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Done Selecting"
+            android:layout_below="@id/list"
+                android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="68px"
+            android:paddingTop="10px"
+           android:visibility="invisible" 
+           android:onClick="addCourse"/>
+
+    
+</RelativeLayout>

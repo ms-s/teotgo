@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, start!</string>
+    <string name="app_name">TEOTGOvF</string>
+     <string name="planet_prompt">Choose a Reminder</string>
+    <string-array name="planets_array">
+    <item>No reminder</item>
+        <item>5 Min</item>
+        <item>10 Min</item>
+        <item>15 Min</item>
+        <item>20 Min</item>
+        <item>30 Min</item>
+    </string-array>
+    
+</resources>
